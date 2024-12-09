@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1d064b4e8bec6ba3",
+        "type": "function",
+        "z": "e13418c849c02e15",
+        "name": "function 1",
+        "func": "msg.topic = \"INSERT INTO data (I1_A, I2_A, I3_A, I_AVG_A, UP1_V, UP2_V, UP3_V, UP_AVG_V, UL1_V, UL2_V, UL3_V, UL_AVG_V, PA1_kW, PA2_kW, PA3_kW, PA_AVG_kW, EPImp_Wh, EPExp_Wh) VALUES (?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?,?)\";\nmsg.payload = [\n    msg.payload[0], \n    msg.payload[2], \n    msg.payload[4],  \n    msg.payload[6], \n    msg.payload[10], \n    msg.payload[12], \n    msg.payload[14], \n    msg.payload[16], \n    msg.payload[20], \n    msg.payload[22], \n    msg.payload[24],  \n    msg.payload[26],  \n    msg.payload[28], \n    msg.payload[30], \n    msg.payload[32], \n    msg.payload[34], \n\n    ];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "4fc3e627200ed214"
+            ]
+        ]
+    },
+    {
+        "id": "77b88ed8458cb71f",
+        "type": "function",
+        "z": "e13418c849c02e15",
+        "name": "function 2",
+        "func": "msg.topic = \"INSERT INTO data (I1_A, I2_A, I3_A, I_AVG_A, UP1_V, UP2_V, UP3_V, UP_AVG_V, UL1_V, UL2_V, UL3_V, UL_AVG_V, PA1_kW, PA2_kW, PA3_kW, PA_AVG_kW, EPImp_Wh, EPExp_Wh) VALUES (?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?,?)\";\nmsg.payload = [\n    msg.payload[0], \n    msg.payload[2], \n    msg.payload[4],  \n    msg.payload[6], \n    msg.payload[10], \n    msg.payload[12], \n    msg.payload[14], \n    msg.payload[16], \n    msg.payload[20], \n    msg.payload[22], \n    msg.payload[24],  \n    msg.payload[26],  \n    msg.payload[28], \n    msg.payload[30], \n    msg.payload[32], \n    msg.payload[34], \n\n    ];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "4fc3e627200ed214"
+            ]
+        ]
+    }
+]
